@@ -4,6 +4,10 @@
     width: 300px;
 }
 
+.frame{
+    margin: 20px;
+}
+
 .photoClass:hover{
     border: 1px solid #777;
 }
@@ -13,6 +17,7 @@
     text-align: center;
     display: block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.178);
 }
 
 .transparent {
@@ -21,6 +26,7 @@
     -ms-filter:blur(4px);
     -moz-filter:blur(4px);
     -webkit-filter:blur(4px);
+    opacity: 70%;
 }
 
 .photoInfo{

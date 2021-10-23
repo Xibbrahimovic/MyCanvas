@@ -3,7 +3,8 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 
 
 function GalleryList({list, fetchPhotos, likedPhoto}) {
-    return(<>
+    return(
+    <>
     <div className="listDiv">
         {
             list.map(galleryItem =>(
