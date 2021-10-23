@@ -2,7 +2,7 @@ import './GalleryList.css'
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 
-function GalleryList({list, fetchPhotos}) {
+function GalleryList({list, fetchPhotos, likedPhoto}) {
     return(<>
     <div className="listDiv">
         {
@@ -11,7 +11,7 @@ function GalleryList({list, fetchPhotos}) {
                 key={galleryItem.id}
                 fetchPhotos={fetchPhotos}
                 galleryItem={galleryItem}
-                // likedPhoto={likedPhoto}
+                likedPhoto={likedPhoto}
                 />
             ))
         }

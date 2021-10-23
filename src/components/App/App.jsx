@@ -29,6 +29,20 @@ function App() {
     })
   }//end FETCH/GET list
 
+  const likedPhoto = (galleryItem) => {
+    axios({
+      method: 'PUT',
+      url: `gallery/like/${galleryItem.id}`
+    })
+    .then((response) => {
+      console.log('Update liked photo');
+      fetchPhotos();
+    })
+    .catch((error) => {
+      console.log('Error updating liked item', error);
+    });
+  }
+
  console.log(galleryList);
     return (
       <div className="App">
@@ -40,7 +54,7 @@ function App() {
         <GalleryList
           list={galleryList}
           fetchPhotos={fetchPhotos}
-          // likedPhoto={likedPhoto}
+          likedPhoto={likedPhoto}
           />
       </div>
     );

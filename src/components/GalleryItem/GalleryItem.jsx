@@ -1,6 +1,6 @@
 import './GalleryItem.css';
 
-function GalleryItem({galleryItem,}){
+function GalleryItem({galleryItem, likedPhoto}){
 
     return (
         <>
@@ -9,7 +9,8 @@ function GalleryItem({galleryItem,}){
     </div>
 
     <div>
-    <button>Love it</button>
+    <button onClick={()=> {likedPhoto(galleryItem)}}>Love it!</button>
+    <p><span>{galleryItem.likes}</span>  likes on this!</p>
     </div>
     </>
 
