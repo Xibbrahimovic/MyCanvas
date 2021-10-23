@@ -1,0 +1,6 @@
+.listDiv {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+
+    order: 3}

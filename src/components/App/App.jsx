@@ -32,11 +32,13 @@ function App() {
   const likedPhoto = (galleryItem) => {
     axios({
       method: 'PUT',
-      url: `gallery/like/${galleryItem.id}`
+      url: `gallery/like/${galleryItem.id}` 
+      //route is needed to each individual photo based on id
     })
     .then((response) => {
       console.log('Update liked photo');
       fetchPhotos();
+      //rerender photos after updating to get the counter updated
     })
     .catch((error) => {
       console.log('Error updating liked item', error);

@@ -32,7 +32,7 @@ const galleryItems = [
     {id: 7, 
     path: 'images/sweetie.jpg', 
     description: "My truly wonderful sweetie, isn't she lovely? <3 ", 
-    likes: 0},
+    likes: 1000},
 
 ];
 
