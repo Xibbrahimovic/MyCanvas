@@ -1,0 +1,14 @@
+.photoClass {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.photoClass:hover{
+    border: 1px solid #777;
+}
+
+.body{
+    text-align: center;
+    display: block;
+}
