@@ -4,3 +4,7 @@
     flex-flow: row wrap;
 
     order: 3}
+    
+body{
+        background-color: rgba(255, 227, 185, 0.925);
+      }

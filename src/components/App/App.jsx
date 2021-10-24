@@ -38,7 +38,7 @@ function App() {
     .then((response) => {
       console.log('Update liked photo');
       fetchPhotos();
-      //rerender photos after updating to get the counter updated
+      //rerender photos after updating to get the counter
     })
     .catch((error) => {
       console.log('Error updating liked item', error);
@@ -49,10 +49,10 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">My Canvas</h1>
         </header>
 
-        <h2>Gallery goes here</h2>
+        <h2></h2>
         <GalleryList
           list={galleryList}
           fetchPhotos={fetchPhotos}
