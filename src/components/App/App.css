@@ -5,10 +5,12 @@
 
 
 .App-header {
-  background-color: #222;
+  background-color: rgba(117, 66, 0, 0.856);
   padding: 1em;
   color: white;
   margin-bottom: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:x-large;
 }
 
 .App-title {

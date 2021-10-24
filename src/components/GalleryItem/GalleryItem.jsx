@@ -8,6 +8,10 @@ function GalleryItem({ galleryItem, likedPhoto }) {
     // const [isClick, setClick] = useState(false);
 
 
+    const beTheFirst = 'Be the first to like this!';
+    const youreTheFirst = "YAY! You're the first person!";
+    const numOfLikes = galleryItem.likes + "❤️'s on this!";
+
     const toggleDescription = () => {
         setRevealDescription(!revealDescription);}; //set state to opposite when photo is clicked
         console.log(revealDescription);
@@ -15,25 +19,24 @@ function GalleryItem({ galleryItem, likedPhoto }) {
 
 
   return (
-    <div class="frame">
-      <div className="container">
+<div class="frame">
+    <div className="container">
         {/* Assigns transparent to each photo if clicked */}
         <img className={revealDescription ? "transparent photoClass " : "photoClass"
 }
-          src={galleryItem.path}
-          alt={galleryItem.description}
-          onClick={toggleDescription}
-        />
-        {/* if revealDescription is true, toggle description and class */}
-        {revealDescription && (<div 
-            className="photoInfo">
-            {galleryItem.description}
-            </div>)}
-        </div>
-        {/* end container class */}
+        src={galleryItem.path}
+        alt={galleryItem.description}
+        onClick={toggleDescription}/>
 
-        {galleryItem.likes ? <p><span className="textFont"> {galleryItem.likes} </span> ❤️'s on this!</p> : 
-        <p className="textFont">Be the first to love it!  ❤️</p>} 
+        {/* if revealDescription is true, toggle description and class */}
+
+        {revealDescription && (<div className="photoInfo"> {galleryItem.description}</div>)}
+    </div>{/* end container class */}
+
+        {galleryItem.likes === 0 ? <p className="textFont">Be the first to love it!  ❤️</p> :
+        galleryItem.likes === 1  ? <p className="textFont"> YAY!  You're the first to ❤️ this!</p> :
+        <p><span className="textFont"> {galleryItem.likes} </span> ❤️'s on this!</p>} 
+
         <div>
             <button className="likeBtn" onClick={() => {likedPhoto(galleryItem);}}>
              LOVE<i className="" style={{ color: "white" }}></i>
