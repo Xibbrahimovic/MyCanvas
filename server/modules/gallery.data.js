@@ -1,9 +1,9 @@
 const galleryItems = [
-    { id: 1, 
-    path: 'images/goat_small.jpg', 
-    description: 'Photo of a goat taken at Glacier National Park.', 
-    likes: 0 },
-
+    {id: 7, 
+    path: 'images/sweetie.jpg', 
+    description: "My truly wonderful sweetie, isn't she lovely? <3 ", 
+    likes: 1000},
+    
     {id: 2, 
     path: 'images/boston.jpg', 
     description: 'On my free time, I love exploring the outdoors as that is where I find peace with many things in my life', 
@@ -28,11 +28,6 @@ const galleryItems = [
     path: 'images/rainytents.jpg', 
     description: 'Our last night having dinner inside our tents as the rain begins to pour...', 
     likes: 0},
-
-    {id: 7, 
-    path: 'images/sweetie.jpg', 
-    description: "My truly wonderful sweetie, isn't she lovely? <3 ", 
-    likes: 1000},
 
 ];
 
