@@ -1,6 +1,9 @@
 import "./GalleryItem.css";
 import { useState } from "react";
-// import Heart from "react-animated-heart";
+import Button from '@mui/material/Button';
+// import Delete from '@mui/material/Delete';
+// import Container from '@mui/material/Container';
+
 
 function GalleryItem({ galleryItem, likedPhoto }) {
   const [revealDescription, setRevealDescription] = useState(false);
@@ -33,8 +36,12 @@ function GalleryItem({ galleryItem, likedPhoto }) {
       (<p className="textFont"> YAY! You're the first to ❤️ this!</p>) : 
 
       (<p><span className="textFont"> {galleryItem.likes} </span> ❤️'s on this!</p>)}
-      <div><button className="likeBtn" onClick={() => {likedPhoto(galleryItem);}}
-      > LOVE<i className="" style={{ color: "white" }}></i></button>
+      <div><Button 
+      variant="contained"
+      color="primary"
+      className="likeBtn" 
+      onClick={() => {likedPhoto(galleryItem);}}
+      > LOVE<i className="" style={{ color: "white" }}></i></Button>
       </div>
     </div>
   );
